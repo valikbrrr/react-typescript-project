@@ -2,14 +2,9 @@ import React from "react";
 const e = React.createElement;
 
 function App() {
-  // return <h1>hello</h1>;
-  return e("h1", {}, [
-    e(
-      "p",
-      { className: "parag" },
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nostrum culpa consequuntur dignissimos eveniet sint rerum illo, magni quos optio quibusdam soluta earum quia architecto recusandae iusto neque incidunt praesentium"
-    ),
-    e("button", { className: "Button" }, "click me"),
+  return e("div", { className: "container" }, [
+    e("h1", { className: "bg-black", key: 1 }, "aaaaaaa"),
+    e("button", { className: "py-2 px-4 border", key: 2 }, "click me"),
   ]);
 }
 
