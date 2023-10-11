@@ -1,12 +1,22 @@
-import styles from "./index.css";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import Galery from "./components/Galery";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Subscription from "./components/Subscription";
 
 function App() {
   return (
-    <div className="container">
-      <div className="header max-w-100% h-100px mx-auto text-red-700">
-        aaaaaaaaaaa
-      </div>
+    <div className="container bg-black h-full">
+      <Header />
+      <Hero />
+      <Galery />
+      <Cards />
+      <Subscription />
+      <Footer />
     </div>
   );
 }
 export default App;
+//ctrl + shift + p => window reload
+//rafce
