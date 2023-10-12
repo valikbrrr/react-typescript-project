@@ -1,6 +1,6 @@
 const Subscription = () => {
   return (
-    <div className="flex h-[400px] w-[100%] mt-16 bg-black px-10">
+    <div className="flex max-h-[500px] w-[100%] mt-16 bg-black px-10">
       <div className="left w-[50%] bg-green-700">
         <div className="text-white text-4xl font-bold mt-20 ml-[115px]">
           На смартфоне и планшете
@@ -14,12 +14,12 @@ const Subscription = () => {
           <div className=""></div>
           <div className=""></div>
         </div>
-        <div className="">
+        <div className="ml-[115px] mb-3">
           Apple, логотип Apple являются товарными знаками Apple Inc.,
           зарегистрированными в США и иных странах и регионах. App Store
           является знаком обслуживания Apple Inc.
         </div>
-        <div className="">
+        <div className="ml-[115px] mb-2">
           Google Play и логотип Google Play являются товарными знаками
           корпорации Google LLC.
         </div>

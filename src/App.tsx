@@ -7,7 +7,7 @@ import Subscription from "./components/Subscription";
 
 function App() {
   return (
-    <div className="container bg-black h-full">
+    <div className="container bg-black h-[100%]">
       <Header />
       <Hero />
       <Galery />
