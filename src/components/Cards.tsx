@@ -11,6 +11,9 @@ const Cards = () => {
       <div className="text-white text-4xl mb-4 font-bold">На телевизоре</div>
       <div className="h-[200px]"></div>
     </div>
+    //     <div className="h-[250px] bg-red-300 text-black flex flex-col items-center">
+    // <img src={svg} alt="asdsfghj" />
+    //     </div>
   );
 };
 

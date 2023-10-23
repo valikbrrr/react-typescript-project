@@ -1,5 +1,4 @@
-import React from "react";
-import yunuef from "../assets/icons/icon.svg";
+import tv from "../assets/icons/tv.svg";
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
       </div>
       <div className="right_section py-8 ml-[900px] w-[100%] flex">
         <div className="setup_on_tv flex">
-          <img className="" src={yunuef} alt="ic_tv" />
+          <img className="" src={tv} alt="ic_tv" />
           <div className="writing ml-1 mr-4 text-lg font-roboto text-white">
             Установить на ТВ
           </div>
