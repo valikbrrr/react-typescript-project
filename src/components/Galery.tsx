@@ -1,24 +1,61 @@
-import { useState } from "react";
+// import films from "../assets/films.json";
+
+// const Galery = () => {
+//   return <div className="bg-red-400">aefes</div>;
+// };
+
+// export default Galery;
+
+import { useEffect, useState } from "react";
 
 const Galery = () => {
-  let [count, setCount] = useState(0);
+  let [photos, setPhotos] = useState([]);
+  useEffect(() => {
+    getMovies();
+  }, []);
 
-  const handleCount = () => {
-    setCount(++count);
-    console.log("hfg");
+  const getMovies = async () => {
+    let data = await fetch(
+      "https://jsonplaceholder.typicode.com/albums/1/photos"
+    );
+    const result = await data.json();
+    setPhotos(result);
+    console.log(result);
   };
 
   return (
-    <div className="bg-white min-h-20">
-      <h1>{count}</h1>
-      <button type="button" onClick={handleCount}>
-        НАЖАТЬ
-      </button>
+    <div>
+      {photos.map((photo: any) => (
+        <div className="bg-red-300">
+          <h2>{photo.title}</h2>
+          <img src={photo.url} alt="jhgfg"></img>
+        </div>
+      ))}
     </div>
   );
 };
 
 export default Galery;
+
+// const Galery = () => {
+//   let [count, setCount] = useState(0);
+
+//   const handleCount = () => {
+//     setCount(++count);
+//     console.log("hfg");
+//   };
+
+//   return (
+//     <div className="bg-white min-h-20">
+//       <h1>{count}</h1>
+//       <button type="button" onClick={handleCount}>
+//         НАЖАТЬ
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default Galery;
 
 // 1: @import url('https://dummyapi.online/api/movies');
 // https://dummyapi.online/api/movies
@@ -29,12 +66,6 @@ export default Galery;
 // useState(() => {
 
 // })
-
-// const Galery = () => {
-//   const getMovies = async () => {
-//     const movies = await axios.get("https://dummyapi.online/api/movies");
-//     console.log(movies);
-//   };
 
 //   useEffect(() => {
 //     getMovies();
