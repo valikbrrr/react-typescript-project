@@ -24,12 +24,13 @@ const Galery = () => {
   };
 
   return (
-    <div>
-      {photos.map((photo: any) => (
-        <div className="bg-red-300">
-          <h2>{photo.title}</h2>
-          <img src={photo.url} alt="jhgfg"></img>
-        </div>
+    <div className="flex flex-wrap justify-center bg-black pb-20">
+      {photos.slice(0, 10).map((photo: any) => (
+        <img
+          src={photo.url}
+          alt="jhgfg"
+          className="text-center bg-red-800 m-2 w-64 h-72"
+        ></img>
       ))}
     </div>
   );

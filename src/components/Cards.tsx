@@ -1,3 +1,5 @@
+import pult from "../assets/icons/pult.svg";
+
 const Cards = () => {
   return (
     <div className="bg-black max-h-[760px] w-[100%] mx-auto px-10">
@@ -9,7 +11,9 @@ const Cards = () => {
         <br /> бабули — онлайн или без интернета.
       </div>
       <div className="text-white text-4xl mb-4 font-bold">На телевизоре</div>
-      <div className="h-[200px]"></div>
+      <div className="h-[200px]">
+        <img src={pult} alt="pult" />
+      </div>
     </div>
     //     <div className="h-[250px] bg-red-300 text-black flex flex-col items-center">
     // <img src={svg} alt="asdsfghj" />

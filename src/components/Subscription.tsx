@@ -1,6 +1,8 @@
+import ic from "../assets/icons/icon.svg";
+
 const Subscription = () => {
   return (
-    <div className="flex max-h-[500px] w-[100%] mt-16 bg-black px-10">
+    <div className="flex h-auto w-[100%] pt-16 bg-black px-10">
       <div className="left w-[50%] bg-green-700">
         <div className="text-white text-4xl font-bold mt-20 ml-[115px]">
           На смартфоне и планшете
@@ -9,10 +11,10 @@ const Subscription = () => {
           Скачивайте фильмы, серии и целые сезоны прямо в<br /> приложении
           Кинопоиска и берите с собой, куда бы вы ни отправились.
         </div>
-        <div className="">
-          <div className=""></div>
-          <div className=""></div>
-          <div className=""></div>
+        <div className="flex flex-wrap justify-center space-x-2 ml-{115px}">
+          <img src={ic} alt="ic" className="w-40" />
+          <img src={ic} alt="ic" className="w-40" />
+          <img src={ic} alt="ic" className="w-40" />
         </div>
         <div className="ml-[115px] mb-3">
           Apple, логотип Apple являются товарными знаками Apple Inc.,
