@@ -1,11 +1,14 @@
 import tv from "../assets/icons/tv.svg";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="header flex px-16 max-h-96 max-w-[1440px] mx-auto">
-      <div className="label_kinopoisk text-3xl py-6 text-white font-bold">
-        кинопоиск
-      </div>
+      <span className="text-white " onClick={() => navigate("/TestPage")}>
+        Кинопоиск
+      </span>
       <div className="right_section py-8 ml-[900px] w-[100%] flex">
         <div className="setup_on_tv flex">
           <img className="" src={tv} alt="ic_tv" />
