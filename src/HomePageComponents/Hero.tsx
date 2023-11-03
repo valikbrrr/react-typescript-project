@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigator = useNavigate();
   return (
     <div className="adv_title text-center my-12 max-w-[1440px] mx-auto">
       <div className="first_title  text-6xl px-16 text-white font-bold">
@@ -13,7 +16,8 @@ const Hero = () => {
       </div>
       <button
         type="button"
-        className="hover bg-gradient-to-r from-pink-400 to-purple-800 text-white font-bold py-4 mt-8 px-4 rounded-3xl"
+        className="hover:w-48 hover:h-16 hover:mt-6 bg-gradient-to-r from-pink-400 to-purple-800 text-white font-bold py-4 mt-8 px-4 rounded-3xl"
+        onClick={() => navigator("/SubscrPage")}
       >
         Хочу, оформляем!
       </button>

@@ -6,17 +6,28 @@ const Header = () => {
 
   return (
     <div className="header flex px-16 max-h-96 max-w-[1440px] mx-auto">
-      <span className="text-white " onClick={() => navigate("/TestPage")}>
+      <span
+        className="text-white label_kinopoisk text-3xl py-6  font-bold"
+        onClick={() => navigate("/MainPage")}
+      >
         Кинопоиск
       </span>
       <div className="right_section py-8 ml-[900px] w-[100%] flex">
         <div className="setup_on_tv flex">
           <img className="" src={tv} alt="ic_tv" />
-          <div className="writing ml-1 mr-4 text-lg font-roboto text-white">
+          <span
+            className="ml-1 mr-4 text-lg font-roboto text-white"
+            onClick={() => navigate("/OnTvPage")}
+          >
             Установить на ТВ
-          </div>
+          </span>
         </div>
-        <div className="entrancy text-lg text-white">Войти</div>
+        <span
+          className="text-lg text-white"
+          onClick={() => navigate("/Entrance")}
+        >
+          Войти
+        </span>
       </div>
     </div>
   );

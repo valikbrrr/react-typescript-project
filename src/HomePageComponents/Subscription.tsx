@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import ic from "../assets/icons/icon.svg";
 import pult from "../assets/icons/pult.svg";
 
 const Subscription = () => {
+  const navigator = useNavigate();
+
   return (
     <div className=" bg-black pt-16 px-10">
       <div className="flex h-auto w-[100%]">
@@ -33,7 +36,8 @@ const Subscription = () => {
       <div className="h-24 w-[100%] flex justify-center">
         <button
           type="button"
-          className="hover bg-gradient-to-r from-pink-400 to-purple-800 hover:bg-gradient-to-l text-white font-bold py-4 mt-8 px-4 rounded-3xl justify-center"
+          className="bg-gradient-to-r from-pink-400 to-purple-800 hover:bg-gradient-to-l text-white font-bold py-4 mt-8 px-4 rounded-3xl justify-center"
+          onClick={() => navigator("/SubscrPage")}
         >
           Хочу, оформляем!
         </button>
