@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import ic from "../assets/icons/icon.svg";
-import pult from "../assets/icons/pult.svg";
+// import pult from "../assets/icons/pult.svg";
 
 const Subscription = () => {
   const navigator = useNavigate();
@@ -31,12 +31,17 @@ const Subscription = () => {
             корпорации Google LLC.
           </div>
         </div>
-        <img src={pult} alt="" className="right w-[50%]" />
+        <img
+          src="https://avatars.mds.yandex.net/get-ott/239697/2a0000018b67f8d7669d9942f5c2b9a3eaec/orig"
+          srcSet="https://avatars.mds.yandex.net/get-ott/239697/2a0000018b67f8d7669d9942f5c2b9a3eaec/orig 1x, https://avatars.mds.yandex.net/get-ott/1652588/2a0000018b67f96e538142c54de124d82646/orig 2x"
+          alt="devices"
+          className="bg-none ml-16"
+        />
       </div>
-      <div className="h-24 w-[100%] flex justify-center">
+      <div className="h-[88px] w-[100%] flex justify-center">
         <button
           type="button"
-          className="bg-gradient-to-r from-pink-400 to-purple-800 hover:bg-gradient-to-l text-white font-bold py-4 mt-8 px-4 rounded-3xl justify-center"
+          className="bg-gradient-to-l from-indigo-600 via-pink-500 via-80% to-red-400 hover:w-48 hover:h-16 text-white font-bold py-4 mt-8 px-4 rounded-3xl justify-center"
           onClick={() => navigator("/SubscrPage")}
         >
           Хочу, оформляем!
@@ -45,5 +50,5 @@ const Subscription = () => {
     </div>
   );
 };
-
+// from-blue-600 from-10% via-pink-500 via-80%
 export default Subscription;

@@ -3,9 +3,11 @@ import Header from "./HomePageComponents/Header";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="">
       <Header />
-      <div className="h-96 border-gray-800">content</div>
+      <div className="h-96 border-gray-800 font-bold text-9xl text-center ">
+        content
+      </div>
       <Footer />
     </div>
   );
