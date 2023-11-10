@@ -6,3 +6,5 @@ function App() {
 export default App;
 //ctrl + shift + p => window reload
 //rafce
+//chore - не важное
+//upgreate

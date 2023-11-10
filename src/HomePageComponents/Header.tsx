@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <div className="header flex px-16 max-h-96 max-w-[1440px] mx-auto">
       <span
-        className="text-white label_kinopoisk text-2xl py-6  font-bold"
-        onClick={() => navigate("/MainPage")}
+        className="text-white label_kinopoisk text-2xl py-6  font-bold cursor-pointer"
+        onClick={() => navigate("/")}
       >
         КИНОПОИСК
       </span>
-      <div className="right_section py-8 ml-[900px] w-[100%] flex">
+      <div className="right_section py-8 ml-[900px] w-[100%] flex cursor-pointer">
         <div className="setup_on_tv flex opacity-70 hover:opacity-100">
           <img className="font-bold" src={tv} alt="ic_tv" />
           <span
@@ -23,7 +23,7 @@ const Header = () => {
           </span>
         </div>
         <span
-          className="text-lg text-white opacity-70 hover:opacity-100 font-bold"
+          className="text-lg text-white opacity-70 hover:opacity-100 font-bold cursor-pointer"
           onClick={() => navigate("/Entrance")}
         >
           Войти
