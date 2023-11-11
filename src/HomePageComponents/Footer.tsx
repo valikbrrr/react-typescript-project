@@ -4,7 +4,7 @@ interface IFooterProps {
 
 const Footer = ({ setIsChatOpen }: IFooterProps) => {
   return (
-    <div className="bg-black mt-16 w-[100%]">
+    <div className="bg-black pt-16 w-[100%]">
       <div className="h-64 mx-6 px-16 border-t-2 border-white opacity-30">
         <div className="w-[100%] text-center pt-8">
           <a

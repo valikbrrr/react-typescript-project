@@ -11,7 +11,7 @@ const HomePage = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="bg-black relative">
+    <div className="bg-black h-full">
       <Header />
       <Hero />
       <Galery />

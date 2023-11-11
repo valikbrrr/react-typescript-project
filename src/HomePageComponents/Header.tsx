@@ -5,7 +5,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="header flex px-16 max-h-96 max-w-[1440px] mx-auto">
+    <div className="flex px-16 max-h-96 max-w-[1440px] mx-auto">
       <span
         className="text-white label_kinopoisk text-2xl py-6  font-bold cursor-pointer"
         onClick={() => navigate("/")}
