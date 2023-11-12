@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "./HomePageComponents/Footer";
 import Header from "./HomePageComponents/Header";
-import Chat from "./HomePageComponents/Chat";
+import Chat from "./HomePageComponents/ChatQuestion/Chat";
 
 const Layout = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);

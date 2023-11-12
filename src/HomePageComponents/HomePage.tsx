@@ -5,7 +5,7 @@ import Galery from "./Galery";
 import Header from "./Header";
 import Hero from "./Hero";
 import Subscription from "./Subscription";
-import Chat from "./Chat";
+import Chat from "./ChatQuestion/Chat";
 
 const HomePage = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
