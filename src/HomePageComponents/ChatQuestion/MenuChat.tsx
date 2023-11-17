@@ -3,7 +3,11 @@ import ActionMenuChat from "../../assets/icons/ActionMenuChat.svg";
 import ExternalLinkChat from "../../assets/icons/ExternalLinkChat.svg";
 import CloseChat from "../../assets/icons/CloseChat.svg";
 
-const BodyChat = () => {
+interface IFooterProps {
+  setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const BodyChat = ({ setIsChatOpen }: IFooterProps) => {
   return (
     <div className="text-white border-b-2 border-slate-200">
       <div className="grid grid-cols-10 px-2 grid-rows-1">
@@ -20,8 +24,8 @@ const BodyChat = () => {
           />
         </div>
         <div className="col-span-5 text-black text-left ">
-          <div className="text-[13px] font-medium px-2">
-            Поддержка кинопо...
+          <div className="text-[14px] font-medium px-2 truncate">
+            Поддержка кинопоbcr
           </div>
           <div className="text-[12px] pl-2 opacity-70">В сети</div>
         </div>
@@ -40,6 +44,7 @@ const BodyChat = () => {
             className="cursor-pointer col-start-3 my-2 rounded-full hover:bg-gray-200"
             src={CloseChat}
             alt="close"
+            onClick={() => setIsChatOpen(false)}
           />
         </div>
       </div>

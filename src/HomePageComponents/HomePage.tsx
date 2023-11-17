@@ -18,7 +18,7 @@ const HomePage = () => {
       <Cards />
       <Subscription />
       <Footer setIsChatOpen={setIsChatOpen} />
-      {IsChatOpen && <Chat />}
+      {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
     </div>
   );
 };

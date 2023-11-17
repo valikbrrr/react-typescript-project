@@ -2,11 +2,15 @@ import HeaderChat from "./HeaderChat";
 import MenuChat from "./MenuChat";
 import BodyChat from "./BodyChat";
 
-const Chat = () => {
+interface IFooterProps {
+  setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Chat = ({ setIsChatOpen }: IFooterProps) => {
   return (
-    <div className="float-right fixed bottom-6 top-6 right-5 bg-white rounded w-80 mb-6">
+    <div className="fixed right-5 top-6 bottom-6 bg-orange-600 rounded w-80 h-5/6">
       <HeaderChat />
-      <MenuChat />
+      <MenuChat setIsChatOpen={setIsChatOpen} />
       <BodyChat />
     </div>
   );

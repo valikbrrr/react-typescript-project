@@ -15,7 +15,9 @@ const Layout = () => {
         </div>
         <Footer setIsChatOpen={setIsChatOpen} />
       </div>
-      <div className="">{IsChatOpen && <Chat />}</div>
+      <div className="">
+        {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
+      </div>
     </div>
   );
 };
