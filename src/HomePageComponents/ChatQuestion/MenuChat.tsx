@@ -3,13 +3,14 @@ import ActionMenuChat from "../../assets/icons/ActionMenuChat.svg";
 import ExternalLinkChat from "../../assets/icons/ExternalLinkChat.svg";
 import CloseChat from "../../assets/icons/CloseChat.svg";
 
-interface IFooterProps {
+interface IMenuChatProps {
+  setIsOpenNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
   setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const BodyChat = ({ setIsChatOpen }: IFooterProps) => {
+const MenuChat = ({ setIsChatOpen, setIsOpenNavMenu }: IMenuChatProps) => {
   return (
-    <div className="text-white border-b-2 border-slate-200">
+    <div className="text-slate-100 border-b-2 border-slate-200 relative">
       <div className="grid grid-cols-10 px-2 grid-rows-1">
         <div className="col-span-2 grid">
           <img
@@ -25,7 +26,7 @@ const BodyChat = ({ setIsChatOpen }: IFooterProps) => {
         </div>
         <div className="col-span-5 text-black text-left ">
           <div className="text-[14px] font-medium px-2 truncate">
-            Поддержка кинопоbcr
+            Поддержка кинопоиска
           </div>
           <div className="text-[12px] pl-2 opacity-70">В сети</div>
         </div>
@@ -34,9 +35,10 @@ const BodyChat = ({ setIsChatOpen }: IFooterProps) => {
             className="cursor-pointer my-2 col-span-1 rounded-full hover:bg-gray-200"
             src={ActionMenuChat}
             alt="menu"
+            onClick={() => setIsOpenNavMenu((prev) => !prev)}
           />
           <img
-            className="cursor-pointer col-start-2 mt-2 rounded-full hover:bg-gray-200"
+            className="cursor-pointer col-start-2 mt-2 rounded-full hover:bg-gray-200 "
             src={ExternalLinkChat}
             alt="ext"
           />
@@ -52,4 +54,4 @@ const BodyChat = ({ setIsChatOpen }: IFooterProps) => {
   );
 };
 
-export default BodyChat;
+export default MenuChat;

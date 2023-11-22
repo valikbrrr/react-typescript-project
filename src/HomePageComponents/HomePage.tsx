@@ -11,13 +11,15 @@ const HomePage = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="bg-black h-full">
-      <Header />
-      <Hero />
-      <Galery />
-      <Cards />
-      <Subscription />
-      <Footer setIsChatOpen={setIsChatOpen} />
+    <div className="bg-black h-full absolute">
+      <div className="">
+        <Header />
+        <Hero />
+        <Galery />
+        <Cards />
+        <Subscription />
+        <Footer setIsChatOpen={setIsChatOpen} />
+      </div>
       {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
     </div>
   );

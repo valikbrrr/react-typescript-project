@@ -21,7 +21,7 @@ const Galery = () => {
         <img
           src={photo.url}
           alt="jhgfg"
-          className="text-center bg-red-800 m-2 w-64 h-72"
+          className="text-center m-2 w-64 h-72"
         ></img>
       ))}
     </div>
