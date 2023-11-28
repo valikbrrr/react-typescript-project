@@ -21,7 +21,7 @@ const Chat = ({ setIsChatOpen }: IFooterProps) => {
   return (
     <div
       ref={chatRef}
-      className="fixed right-5 bottom-6 bg-white rounded w-80 flex flex-col max-h-[640px]"
+      className="fixed right-5 bottom-6 bg-white rounded-t rounded-b w-80 flex flex-col max-h-[640px]"
     >
       <HeaderChat />
       <MenuChat

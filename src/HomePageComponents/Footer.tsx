@@ -22,9 +22,9 @@ const Footer = ({ setIsChatOpen }: IFooterProps) => {
             Условия просмотра платного контента на сервисе Кинопоиск.
           </a>
         </div>
-        <div className="w-[100%] text-center">
+        <div className="w-[100%] text-center pt-8">
           <p
-            className="text-white opacity-50 hover:opacity-90 pt-8 cursor-pointer"
+            className="text-white opacity-50 hover:opacity-90 cursor-pointer"
             onClick={() => setIsChatOpen((prev) => !prev)}
           >
             Задать вопрос

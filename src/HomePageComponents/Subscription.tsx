@@ -41,7 +41,7 @@ const Subscription = () => {
       <div className="h-[88px] w-[100%] flex justify-center">
         <button
           type="button"
-          className="bg-gradient-to-l from-indigo-600 via-pink-500 via-80% to-red-400 hover:scale-110 text-white font-bold py-4 mt-8 px-4 rounded-full justify-center transition-all"
+          className="bg-gradient-to-l from-indigo-600 via-pink-500 via-80% to-red-400 hover:scale-110 text-white font-bold py-4 mt-8 px-4 rounded-full justify-center transition duration-300"
           onClick={() => navigator("/SubscrPage")}
         >
           Хочу, оформляем!
