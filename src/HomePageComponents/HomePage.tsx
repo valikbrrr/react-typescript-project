@@ -11,8 +11,8 @@ const HomePage = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="bg-black h-full absolute">
-      <div className="">
+    <div className="h-full absolute">
+      <div className="bg-black">
         <Header />
         <Hero />
         <Galery />
@@ -26,3 +26,5 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+// сtrl + shift + M = адаптив

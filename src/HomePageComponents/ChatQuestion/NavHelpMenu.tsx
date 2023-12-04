@@ -15,7 +15,7 @@ const NavHelpMenu = ({ setIsOpenNavMenu }: IMenuChatProps) => {
   return (
     <div
       ref={SecMenuRef}
-      className="absolute mx-16 mt-[84px] flex flex-col max-h-96 w-44 bg-white px-2 py-2 drop-shadow-2xl"
+      className="absolute mx-16 mt-[84px] max-h-96 w-44 bg-white px-2 py-2 drop-shadow-2xl"
     >
       <div className="">Поиск</div>
       <div className="">Информация о чате</div>

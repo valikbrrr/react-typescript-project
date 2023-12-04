@@ -4,38 +4,23 @@
 
 const BodyChat = () => {
   return (
-    <div className="flex-1 overflow-y-scroll">
-      <div className="bg-white">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt impedit
-        atque beatae iste, dolorum tempore rem optio non ea, magni nostrum
-        aliquid assumenda obcaecati provident sequi numquam dignissimos deleniti
-        sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-        ea. Eos voluptatum temporibus aspernatur esse pariatur nam mollitia
-        dicta vitae quisquam aut sint non libero aliquam quis, maiores harum
-        rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Repudiandae animi non distinctio modi quod, corrupti minima blanditiis,
-        natus accusamus veniam porro quaerat hic. Placeat porro enim voluptas
-        nam illo! Facere. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Incidunt cumque nisi vero, harum veritatis totam quam deleniti
-        sequi minima dolores minus laudantium exercitationem alias molestiae
-        laboriosam expedita fugit asperiores porro! Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Neque omnis at quidem atque distinctio
-        beatae tenetur ut magnam amet alias doloremque dolorem, facilis
-        inventore. Laboriosam, cum perspiciatis. Porro, repellendus voluptate.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse commodi
-        quae quaerat dolorum quidem quibusdam aliquam voluptatem pariatur
-        distinctio, quis ea ullam eveniet ex deleniti consequuntur quam
-        excepturi adipisci assumenda? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Facere, ea. Eos voluptatum temporibus aspernatur esse
-        pariatur nam mollitia dicta vitae quisquam aut sint non libero aliquam
-        quis, maiores harum rerum! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Repudiandae animi non distinctio modi quod, corrupti
-        minima blanditiis, natus accusamus veniam porro quaerat hic. Placeat
-        porro enim voluptas nam illo! Facere. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Incidunt cumque nisi vero, harum veritatis
-        totam quam deleniti sequi minima dolores minus laudantium exercitationem
-        alias molestiae laboriosam expedita fugit asperiores porro! Lorem ipsum
-        dolor sit
+    <div className="flex-1 overflow-y-scroll px-2 py-5">
+      <div className="flex mb-4">
+        <div className="mr-2 py-3 px-4 bg-gray-200 rounded-bl-xl rounded-br-xl rounded-tr-xl text-sm text-black ">
+          Привет! На связи поддержка Кинопоиска 👀
+          <br />
+          <br /> Собрали для вас ответы на самые частые вопросы в Яндекс
+          Справке. Проверьте, нет ли там подходящего решения:
+          <br />
+          <br /> — Вопросы о Кинопоиске
+          <br /> — О приложении для iOSО
+          <br /> — О приложении для Android
+          <br />
+          <br /> Если возникают трудности при просмотре, не забудьте отключить
+          VPN, прокси и похожие программы. Они могут влиять на стабильную работу
+          сервиса и набор доступных фильмов и сериалов. Не нашли ответа на ваш
+          вопрос? Нажмите на кнопку ниже 👇️
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import Chat from "./HomePageComponents/ChatQuestion/Chat";
 
 const Layout = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
-
   return (
     <div className="">
       <div className="relative">
@@ -15,9 +14,7 @@ const Layout = () => {
         </div>
         <Footer setIsChatOpen={setIsChatOpen} />
       </div>
-      <div className="">
-        {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
-      </div>
+      {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
     </div>
   );
 };

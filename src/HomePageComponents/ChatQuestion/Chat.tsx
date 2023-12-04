@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import NavHelpMenu from "./NavHelpMenu";
 import ChatInput from "./ChatInput";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
+import SmileText from "./SmileText";
 
 interface IFooterProps {
   setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,6 +15,8 @@ const Chat = ({ setIsChatOpen }: IFooterProps) => {
   const chatRef = useRef<HTMLDivElement | null>(null);
   let [IsOpenNavMenu, setIsOpenNavMenu] = useState(false);
 
+  let [SmileUndefine, setSmileUndefine] = useState(false);
+
   const outsideClickHandler = (event: MouseEvent) => setIsChatOpen(false);
 
   useOnClickOutside(chatRef, outsideClickHandler);
@@ -21,7 +24,7 @@ const Chat = ({ setIsChatOpen }: IFooterProps) => {
   return (
     <div
       ref={chatRef}
-      className="fixed right-5 bottom-6 bg-white rounded-t rounded-b w-80 flex flex-col max-h-[640px]"
+      className="fixed right-5 bottom-6 bg-white rounded-t rounded-b w-80 flex flex-col h-[640px]"
     >
       <HeaderChat />
       <MenuChat
@@ -30,7 +33,8 @@ const Chat = ({ setIsChatOpen }: IFooterProps) => {
       />
       {IsOpenNavMenu && <NavHelpMenu setIsOpenNavMenu={setIsOpenNavMenu} />}
       <BodyChat />
-      <ChatInput />
+      <ChatInput setSmileUndefine={setSmileUndefine} />
+      {SmileUndefine && <SmileText />}
     </div>
   );
 };
