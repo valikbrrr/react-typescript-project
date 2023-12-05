@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className="h-full absolute">
-      <div className="bg-black">
+      <div className="bg-black px-16">
         <Header />
         <Hero />
         <Galery />

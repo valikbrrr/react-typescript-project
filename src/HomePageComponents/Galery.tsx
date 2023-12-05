@@ -16,7 +16,7 @@ const Galery = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center pb-20">
+    <div className="flex flex-wrap justify-center pb-20 px-4">
       {photos.slice(0, 10).map((photo: any) => (
         <img
           src={photo.url}
