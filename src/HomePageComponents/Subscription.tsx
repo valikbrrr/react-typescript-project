@@ -12,8 +12,9 @@ const Subscription = () => {
             На смартфоне и планшете
           </div>
           <div className="text-white text-2xl mt-4 mb-10 ml-[115px] mx-auto">
-            Скачивайте фильмы, серии и целые сезоны прямо в<br /> приложении
-            Кинопоиска и берите с собой, куда бы вы ни отправились.
+            Скачивайте фильмы, серии и целые сезоны прямо в
+            <br /> приложении Кинопоиска и берите с собой, куда бы
+            <br className="min-[1600px]:hidden" /> вы ни отправились.
           </div>
           <div className="flex flex-wrap space-x-12 ml-[110px] mb-6">
             <img src={ic} alt="ic" className="w-40 h-12" />
