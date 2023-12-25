@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className="h-full absolute">
-      <div className="bg-black px-16 max-[675px]:px-8">
+      <div className="grid bg-black px-16 max-[675px]:px-8 justify-items-center">
         <Header />
         <Hero />
         <Galery />

@@ -2,12 +2,12 @@ import pult from "../assets/icons/pult.svg";
 
 const Cards = () => {
   return (
-    <div className="bg-black max-h-[760px] w-{1250px} mx-auto pt-14">
-      <div className="text-center py-1 text-white font-bold xl:text-6xl text-4xl max-md:text-3xl">
+    <div className="bg-black max-h-[760px] mx-auto pt-12">
+      <div className="text-center py-1 text-white font-bold xl:text-6xl text-4xl">
         Смотрите кино дома и в дороге
       </div>
-      <div className="text-white text-center py-10 xl:text-4xl text-2xl max-md:text-xl opacity-80">
-        <div className="max-md:hidden whitespace-nowrap">
+      <div className="text-white text-center py-4 xl:text-4xl text-2xl opacity-80">
+        <div className="max-md:hidden">
           А также в парке, на веранде кафе, в метро, в гостях у любимой
           <br /> бабули — онлайн или без интернета.
         </div>
@@ -21,7 +21,7 @@ const Cards = () => {
       <div className="text-white md:text-5xl text-3xl mb-4 font-bold">
         На телевизоре
       </div>
-      <div className="h-[200px] grid grid-cols-8 grid-rows-2 gap-4 justify-center">
+      <div className="h-[256px] grid grid-cols-8 grid-rows-2 gap-4 justify-center">
         <img
           src={pult}
           alt="pult1"
