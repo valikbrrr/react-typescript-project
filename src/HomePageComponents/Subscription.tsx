@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import ic from "../assets/icons/icon.svg";
+import AppGaleryLogo from "../assets/icons/AppGalleryLogo.svg";
+import GoogleLogo from "../assets/icons/GoogleLogo.svg";
+import AppStoreLogo from "../assets/icons/AppStoreLogo.svg";
 
 const Subscription = () => {
   const navigator = useNavigate();
@@ -8,7 +10,7 @@ const Subscription = () => {
     <div className="pt-16">
       <div className="flex w-[100%]">
         <div className="w-[50%] max-[1600px]:w-[100%] max-w-[1440px]">
-          <div className="text-white text-4xl font-bold pt-20 max-[1600px]:text-center max-[1600px]:text-7xl max-xl:text-5xl">
+          <div className="text-white text-4xl font-bold max-[1600px]:text-center max-[1600px]:text-7xl max-xl:text-5xl">
             На смартфоне и планшете
           </div>
           <div className="text-white text-2xl pt-4 pb-10 mx-auto max-[1600px]:text-center max-[1600px]:text-3xl max-xl:text-2xl opacity-80">
@@ -18,9 +20,21 @@ const Subscription = () => {
           </div>
           max-xl:justify-items-end
           <div className="w-[730px] grid grid-cols-3 grid-rows-1 justify-items-start pb-6 max-[1600px]:justify-items-center max-[1600px]:w-[928px] max-xl:w-[700px]">
-            <img src={ic} alt="ic" className="w-40 h-12" />
-            <img src={ic} alt="ic" className="w-40 h-12" />
-            <img src={ic} alt="ic" className="w-40 h-12" />
+            <img
+              src={AppStoreLogo}
+              alt="ic"
+              className="w-40 h-12 cursor-pointer"
+            />
+            <img
+              src={GoogleLogo}
+              alt="ic"
+              className="w-40 h-12 cursor-pointer"
+            />
+            <img
+              src={AppGaleryLogo}
+              alt="ic"
+              className="w-40 h-12 cursor-pointer"
+            />
           </div>
           <div className="w-full max-[1600px]:justify-items-center">
             <div className=" pb-3 text-white text-[0.6rem] opacity-30 max-[1600px]:text-center max-[1600px]:w-auto">
@@ -55,5 +69,4 @@ const Subscription = () => {
     </div>
   );
 };
-// from-blue-600 from-10% via-pink-500 via-80%
 export default Subscription;

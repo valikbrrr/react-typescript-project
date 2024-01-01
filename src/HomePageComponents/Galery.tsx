@@ -16,16 +16,14 @@ const Galery = () => {
   };
 
   return (
-    <div className="">
-      <div className="grid grid-cols-5 grid-rows-2 justify-center pb-10">
-        {photos.slice(0, 10).map((photo: any) => (
-          <img
-            src={photo.url}
-            alt="#"
-            className="text-center p-2  max-[848px]:p-1 "
-          ></img>
-        ))}
-      </div>
+    <div className="grid grid-cols-5 grid-rows-2 justify-center pb-10">
+      {photos.slice(0, 10).map((photo: any) => (
+        <img
+          src={photo.url}
+          alt="#"
+          className="text-center p-2  max-[848px]:p-1 "
+        ></img>
+      ))}
     </div>
   );
 };

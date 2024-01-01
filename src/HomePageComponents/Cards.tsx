@@ -25,34 +25,34 @@ const Cards = () => {
         <img
           src={pult}
           alt="pult1"
-          className="bg-white w-[100%] h-[100%] row-span-2 col-span-2"
+          className="bg-blue-200 w-[100%] h-[100%] row-span-2 col-span-2"
         />
         <img
           src={pult}
           alt="pult2"
-          className="bg-white w-[100%] h-[100%] col-span-2"
+          className="bg-blue-300 w-[100%] h-[100%] col-span-2"
         />
         <img
           src={pult}
           alt="pult3"
-          className="bg-white w-[100%] h-[100%] col-span-2"
+          className="bg-blue-400 w-[100%] h-[100%] col-span-2"
         />
         <img
           src={pult}
           alt="pult4"
-          className="bg-white w-[100%] h-[100%] col-span-2"
+          className="bg-blue-500 w-[100%] h-[100%] col-span-2"
         />
         <img
           src={pult}
           alt="pult5"
-          className="bg-white w-[100%] h-[100%] col-span-2"
+          className="bg-blue-600 w-[100%] h-[100%] col-span-2"
         />
-        <img src={pult} alt="pult6" className="bg-white w-[100%] h-[100%]" />
-        <img src={pult} alt="pult7" className="bg-white w-[100%] h-[100%]" />
+        <img src={pult} alt="pult6" className="bg-blue-700 w-[100%] h-[100%]" />
+        <img src={pult} alt="pult7" className="bg-blue-800 w-[100%] h-[100%]" />
         <img
           src={pult}
           alt="pult8"
-          className="bg-white w-[100%] h-[100%] col-span-2"
+          className="bg-blue-900 w-[100%] h-[100%] col-span-2"
         />
       </div>
     </div>
@@ -60,7 +60,3 @@ const Cards = () => {
 };
 
 export default Cards;
-
-//max-[1129px]:text-4xl  max-[942px]:text-3xl  max-[774px]:text-2xl
-
-// min-[1381px]:text-4xl max-[1129px]:text-xl max-[942px]:text-lg max-[774px]:text-base

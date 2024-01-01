@@ -15,23 +15,25 @@ const NavHelpMenu = ({ setIsOpenNavMenu }: IMenuChatProps) => {
   return (
     <div
       ref={SecMenuRef}
-      className="absolute mx-16 mt-[84px] max-h-96 w-44 bg-white px-2 py-2 drop-shadow-2xl"
+      className="absolute mx-16 mt-[84px] max-h-96 w-44 bg-white drop-shadow-2xl border-2 border-neutral-300 shadow-xl text-sm"
     >
-      <div className="">Поиск</div>
-      <div className="">Информация о чате</div>
-      <div className="">Включить уведомления</div>
-      <div className="">Пожаловаться</div>
-      <div className="">Очистить историю</div>
+      <div className="hover:bg-slate-300 px-2 pt-1">
+        <button className="">Поиск</button>
+      </div>
+      <div className="hover:bg-slate-300">
+        <button className="px-2">Информация о чате</button>
+      </div>
+      <div className="hover:bg-slate-300">
+        <button className="px-2">Включить уведомления</button>
+      </div>
+      <div className="hover:bg-slate-300">
+        <button className="px-2">Пожаловаться</button>
+      </div>
+      <div className="hover:bg-slate-300">
+        <button className="px-2 pb-1">Очистить историю</button>
+      </div>
     </div>
   );
 };
 
 export default NavHelpMenu;
-
-/* <ul className="list-group shadow-md px-2 py-2">
-<li className="list-group-item">An item</li>
-<li className="list-group-item">A second item</li>
-<li className="list-group-item">A third item</li>
-<li className="list-group-item">A fourth item</li>
-<li className="list-group-item">And a fifth one</li>
-</ul> */

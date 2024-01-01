@@ -11,14 +11,14 @@ const HomePage = () => {
   let [IsChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="h-full absolute">
-      <div className="grid bg-black px-16 max-[675px]:px-8 justify-items-center">
+    <div className="h-full absolute box-border">
+      <div className="grid bg-black px-16 max-[675px]:px-8 justify-items-center max-w:[100%]">
         <Header />
         <Hero />
         <Galery />
         <Cards />
         <Subscription />
-        <Footer setIsChatOpen={setIsChatOpen} />
+        <Footer setIsChatOpen={setIsChatOpen} IsChatOpen={IsChatOpen} />
       </div>
       {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
     </div>
