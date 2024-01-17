@@ -1,7 +1,3 @@
-// import InputChat from "./InputChat";
-
-// import InputChat from "./InputChat";
-
 const BodyChat = () => {
   return (
     <div className="flex-1 overflow-y-scroll px-2 py-5">
