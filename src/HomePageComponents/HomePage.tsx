@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Cards from "./Cards";
 import Footer from "./Footer";
 import Galery from "./Galery";
@@ -6,9 +6,12 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Subscription from "./Subscription";
 import Chat from "./ChatQuestion/Chat";
+import { useAppSelector } from "../hooksRedux";
+import { RootState } from "../store";
 
 const HomePage = () => {
-  let [IsChatOpen, setIsChatOpen] = useState(false);
+  const isChatOpen = useAppSelector((state: RootState) => state.slice.value);
+  // let [IsChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <div className="h-full absolute box-border">
@@ -18,9 +21,9 @@ const HomePage = () => {
         <Galery />
         <Cards />
         <Subscription />
-        <Footer setIsChatOpen={setIsChatOpen} IsChatOpen={IsChatOpen} />
+        <Footer />
       </div>
-      {IsChatOpen && <Chat setIsChatOpen={setIsChatOpen} />}
+      {isChatOpen && <Chat />}
     </div>
   );
 };

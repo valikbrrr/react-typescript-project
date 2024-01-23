@@ -4,22 +4,16 @@ import BodyChat from "./BodyChat";
 import { useState, useRef } from "react";
 import NavHelpMenu from "./NavHelpMenu";
 import ChatInput from "./ChatInput";
-import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 import SmileText from "./SmileText";
+import { useAppSelector } from "../../hooksRedux";
+import { RootState } from "../../store";
 
-interface IFooterProps {
-  setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Chat = ({ setIsChatOpen }: IFooterProps) => {
+const Chat = () => {
   const chatRef = useRef<HTMLDivElement | null>(null);
-  let [IsOpenNavMenu, setIsOpenNavMenu] = useState(false);
+
+  const isOpenNavMenu = useAppSelector((state: RootState) => state.slice.value);
 
   let [SmileUndefine, setSmileUndefine] = useState(false);
-
-  const outsideClickHandler = (event: MouseEvent) => setIsChatOpen(false);
-
-  useOnClickOutside(chatRef, outsideClickHandler);
 
   return (
     <div
@@ -27,11 +21,9 @@ const Chat = ({ setIsChatOpen }: IFooterProps) => {
       className="fixed right-5 bottom-6 bg-white rounded-t rounded-b w-80 flex flex-col h-[640px]"
     >
       <HeaderChat />
-      <MenuChat
-        setIsChatOpen={setIsChatOpen}
-        setIsOpenNavMenu={setIsOpenNavMenu}
-      />
-      {IsOpenNavMenu && <NavHelpMenu setIsOpenNavMenu={setIsOpenNavMenu} />}
+      <MenuChat /> {/*  setIsOpenNavMenu={setIsOpenNavMenu}  */}
+      {isOpenNavMenu && <NavHelpMenu />}
+      {/*setIsOpenNavMenu={setIsOpenNavMenu}  */}
       <BodyChat />
       <ChatInput setSmileUndefine={setSmileUndefine} />
       {SmileUndefine && <SmileText />}

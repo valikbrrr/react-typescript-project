@@ -2,13 +2,12 @@ import BackArrow from "../../assets/icons/BackArrow.svg";
 import ActionMenuChat from "../../assets/icons/ActionMenuChat.svg";
 import ExternalLinkChat from "../../assets/icons/ExternalLinkChat.svg";
 import CloseChat from "../../assets/icons/CloseChat.svg";
+import { useAppDispatch } from "../../hooksRedux";
+import { toggleIsChatOpen } from "../../store/Slices";
+import { toggleisOpenNavMenu } from "../../store/Slices";
 
-interface IMenuChatProps {
-  setIsOpenNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const MenuChat = ({ setIsChatOpen, setIsOpenNavMenu }: IMenuChatProps) => {
+const MenuChat = () => {
+  const dispatch = useAppDispatch();
   return (
     <div className="text-slate-100 border-b-2 border-slate-200 relative">
       <div className="grid grid-cols-10 px-2 grid-rows-1">
@@ -35,7 +34,7 @@ const MenuChat = ({ setIsChatOpen, setIsOpenNavMenu }: IMenuChatProps) => {
             className="cursor-pointer my-2 col-span-1 rounded-full hover:bg-gray-200"
             src={ActionMenuChat}
             alt="menu"
-            onClick={() => setIsOpenNavMenu((prev) => !prev)}
+            onClick={() => dispatch(toggleisOpenNavMenu(false))}
           />
           <img
             className="cursor-pointer col-start-2 mt-2 rounded-full hover:bg-gray-200 "
@@ -46,7 +45,7 @@ const MenuChat = ({ setIsChatOpen, setIsOpenNavMenu }: IMenuChatProps) => {
             className="cursor-pointer col-start-3 my-2 rounded-full hover:bg-gray-200"
             src={CloseChat}
             alt="close"
-            onClick={() => setIsChatOpen(false)}
+            onClick={() => dispatch(toggleIsChatOpen())}
           />
         </div>
       </div>

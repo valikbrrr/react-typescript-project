@@ -1,20 +1,24 @@
-import { useRef } from "react";
-import { useOnClickOutside } from "../../hooks/useOnClickOutside";
+// import { useRef } from "react";
+// import { useOnClickOutside } from "../../hooks/useOnClickOutside";
+// import { toggleisOpenNavMenu } from "../../store/Slices";
+// import { useAppDispatch } from "../../hooksRedux";
 
-interface IMenuChatProps {
-  setIsOpenNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// interface IMenuChatProps {
+//   setIsOpenNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 
-const NavHelpMenu = ({ setIsOpenNavMenu }: IMenuChatProps) => {
-  const SecMenuRef = useRef<HTMLDivElement | null>(null);
+const NavHelpMenu = () => {
+  // const dispatch = useAppDispatch();
+  // const SecMenuRef = useRef<HTMLDivElement | null>(null);
 
-  const outsideClickHandler = (event: MouseEvent) => setIsOpenNavMenu(false);
+  // const outsideClickHandler = (event: MouseEvent) =>
+  //   dispatch(toggleisOpenNavMenu());
 
-  useOnClickOutside(SecMenuRef, outsideClickHandler);
+  // useOnClickOutside(SecMenuRef, outsideClickHandler);
 
   return (
     <div
-      ref={SecMenuRef}
+      // ref={SecMenuRef}
       className="absolute mx-16 mt-[84px] max-h-96 w-44 bg-white drop-shadow-2xl border-2 border-neutral-300 shadow-xl text-sm"
     >
       <div className="hover:bg-slate-300 px-2 pt-1">

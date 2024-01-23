@@ -1,12 +1,9 @@
-interface IFooterProps {
-  setIsChatOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  IsChatOpen: boolean;
-}
+import { useAppDispatch } from "../hooksRedux";
+import { toggleIsChatOpen } from "../store/Slices";
 
-const Footer = (
-  { setIsChatOpen }: IFooterProps,
-  { IsChatOpen }: IFooterProps
-) => {
+const Footer = () => {
+  const dispatch = useAppDispatch();
+
   return (
     <div className="bg-black pt-10 w-[100%] max-w-[1440px]">
       <div className="h-32 mb-10 border-t-2 border-white opacity-20">
@@ -27,17 +24,9 @@ const Footer = (
           </a>
         </div>
         <div className="w-[100%] text-center pt-8">
-          {IsChatOpen && (
-            <button
-              className="text-white opacity-80 hover:opacity-90 cursor-pointer"
-              onClick={() => setIsChatOpen(false)}
-            >
-              Задать вопрос
-            </button>
-          )}
           <button
             className="text-white opacity-70 hover:opacity-100 cursor-pointer"
-            onClick={() => setIsChatOpen(true)}
+            onClick={() => dispatch(toggleIsChatOpen())}
           >
             Задать вопрос
           </button>
