@@ -1,11 +1,15 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-type isChatOpenState = {
-  value: boolean;
+type isOpen = {
+  valueChat: boolean;
+  valueNavMenu: boolean;
+  valueSmile: boolean;
 };
 
-const initialState: isChatOpenState = {
-  value: false,
+const initialState: isOpen = {
+  valueChat: false,
+  valueNavMenu: false,
+  valueSmile: false,
 };
 
 export const Slices = createSlice({
@@ -13,13 +17,19 @@ export const Slices = createSlice({
   initialState,
   reducers: {
     toggleIsChatOpen: (state) => {
-      state.value = !state.value;
+      state.valueChat = !state.valueChat;
     },
-    toggleisOpenNavMenu: (state, actions: PayloadAction<boolean>) => {},
+    toggleisOpenNavMenu: (state) => {
+      state.valueNavMenu = !state.valueNavMenu;
+    },
+    toggleSmileCollection: (state) => {
+      state.valueSmile = !state.valueSmile;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleIsChatOpen, toggleisOpenNavMenu } = Slices.actions;
+export const { toggleIsChatOpen, toggleisOpenNavMenu, toggleSmileCollection } =
+  Slices.actions;
 
 export default Slices.reducer;

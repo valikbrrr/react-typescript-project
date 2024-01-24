@@ -10,8 +10,9 @@ import { useAppSelector } from "../hooksRedux";
 import { RootState } from "../store";
 
 const HomePage = () => {
-  const isChatOpen = useAppSelector((state: RootState) => state.slice.value);
-  // let [IsChatOpen, setIsChatOpen] = useState(false);
+  const isChatOpen = useAppSelector(
+    (state: RootState) => state.sliceChat.valueChat
+  );
 
   return (
     <div className="h-full absolute box-border">

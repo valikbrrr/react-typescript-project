@@ -34,7 +34,7 @@ const MenuChat = () => {
             className="cursor-pointer my-2 col-span-1 rounded-full hover:bg-gray-200"
             src={ActionMenuChat}
             alt="menu"
-            onClick={() => dispatch(toggleisOpenNavMenu(false))}
+            onClick={() => dispatch(toggleisOpenNavMenu())}
           />
           <img
             className="cursor-pointer col-start-2 mt-2 rounded-full hover:bg-gray-200 "

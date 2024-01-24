@@ -1,11 +1,11 @@
 import { Paperclip } from "lucide-react";
 import { Smile, Send } from "lucide-react";
+import { useAppDispatch } from "../../hooksRedux";
+import { toggleSmileCollection } from "../../store/Slices";
 
-interface ISmileTextProps {
-  setSmileUndefine: React.Dispatch<React.SetStateAction<boolean>>;
-}
+const ChatInput = () => {
+  const dispatch = useAppDispatch();
 
-const ChatInput = ({ setSmileUndefine }: ISmileTextProps) => {
   return (
     <div className="border-t-2 border-gray-400 mb-2 sm:mb-0">
       <div className="relative flex">
@@ -26,7 +26,7 @@ const ChatInput = ({ setSmileUndefine }: ISmileTextProps) => {
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-full h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none"
-            onClick={() => setSmileUndefine((prev) => !prev)}
+            onClick={() => dispatch(toggleSmileCollection())}
           >
             <Smile />
           </button>

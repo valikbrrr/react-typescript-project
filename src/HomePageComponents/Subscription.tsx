@@ -18,7 +18,6 @@ const Subscription = () => {
             <br /> приложении Кинопоиска и берите с собой, куда бы
             <br /> вы ни отправились.
           </div>
-          max-xl:justify-items-end
           <div className="w-[730px] grid grid-cols-3 grid-rows-1 justify-items-start pb-6 max-[1600px]:justify-items-center max-[1600px]:w-[928px] max-xl:w-[700px]">
             <img
               src={AppStoreLogo}

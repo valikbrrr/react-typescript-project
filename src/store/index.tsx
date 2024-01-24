@@ -3,7 +3,9 @@ import Slices from "./Slices";
 
 export const store = configureStore({
   reducer: {
-    slice: Slices,
+    sliceChat: Slices,
+    sliceNavMenu: Slices,
+    sliceSmile: Slices,
   },
 });
 
