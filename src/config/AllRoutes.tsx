@@ -1,5 +1,5 @@
 import HomePage from "../HomePageComponents/HomePage";
-import Entrance from "../OtherPage/Entrance";
+import Entrance from "../OtherPage/Entrance/Entrance";
 import OnTvPage from "../OtherPage/OnTvPage";
 import SubscrPage from "../OtherPage/SubscrPage";
 

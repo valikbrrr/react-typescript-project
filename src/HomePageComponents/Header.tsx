@@ -14,7 +14,11 @@ const Header = () => {
       </div>
       <div className="py-3 max-[848px]:py-5 flex cursor-pointer">
         <div className="flex opacity-70  hover:opacity-100">
-          <img className="font-bold max-[1280px]:pr-2" src={tv} alt="ic_tv" />
+          <img
+            className="font-bold max-[1280px]:pr-2 pt-1"
+            src={tv}
+            alt="ic_tv"
+          />
           <span
             className="ml-1 max-[1280px]:hidden mr-4 text-lg font-roboto text-white font-bold"
             onClick={() => navigate("/OnTvPage")}

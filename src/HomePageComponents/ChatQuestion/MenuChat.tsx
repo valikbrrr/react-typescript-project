@@ -1,4 +1,4 @@
-import BackArrow from "../../assets/icons/BackArrow.svg";
+import BackArrow from "../../assets/icons/BackArrowBlack.svg";
 import ActionMenuChat from "../../assets/icons/ActionMenuChat.svg";
 import ExternalLinkChat from "../../assets/icons/ExternalLinkChat.svg";
 import CloseChat from "../../assets/icons/CloseChat.svg";
@@ -8,6 +8,7 @@ import { toggleisOpenNavMenu } from "../../store/Slices";
 
 const MenuChat = () => {
   const dispatch = useAppDispatch();
+
   return (
     <div className="text-slate-100 border-b-2 border-slate-200 relative">
       <div className="grid grid-cols-10 px-2 grid-rows-1">
@@ -31,7 +32,7 @@ const MenuChat = () => {
         </div>
         <div className="col-span-3 grid">
           <img
-            className="cursor-pointer my-2 col-span-1 rounded-full hover:bg-gray-200"
+            className="cursor-pointer my-2 col-span-1 rounded-full hover:bg-gray-200 menu-trigger"
             src={ActionMenuChat}
             alt="menu"
             onClick={() => dispatch(toggleisOpenNavMenu())}

@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="">
         <button
           type="button"
-          className="hover:scale-110 transition duration-300 bg-gradient-to-l from-indigo-600 via-pink-500 via-80% to-red-400 text-white  font-bold py-4 mt-8 px-4 rounded-full xl:w-64 xl:h-20 xl:text-xl"
+          className="hover:scale-110 transition duration-300 bg-gradient-to-l from-indigo-600 via-pink-500 via-80% to-red-400 text-white font-bold py-4 mt-8 px-4 rounded-full xl:w-64 xl:h-20 xl:text-xl"
           onClick={() => navigator("/SubscrPage")}
         >
           Хочу, оформляем!

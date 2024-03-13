@@ -10,7 +10,7 @@ const NavHelpMenu = () => {
   const outsideClickHandler = (event: MouseEvent) =>
     dispatch(toggleisOpenNavMenu());
 
-  useOnClickOutside(MenuRef, outsideClickHandler);
+  useOnClickOutside(MenuRef, outsideClickHandler, [".menu-trigger"]);
 
   return (
     <div

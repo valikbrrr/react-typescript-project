@@ -7,3 +7,22 @@
 html, body, #root {
     height: 100%;
 }
+
+#bgEntranceImg {
+    background: linear-gradient(rgba(2,2,2,.5),rgba(0,0,0,.5)), url(https://yastatic.net/s3/passport-auth-customs/customs/_/2SU9HV6X.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#content {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%)
+}

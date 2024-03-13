@@ -17,7 +17,9 @@ const Chat = () => {
   const outsideClickHandler = (event: MouseEvent) =>
     dispatch(toggleIsChatOpen());
 
-  useOnClickOutside(chatRef, outsideClickHandler);
+  useOnClickOutside<HTMLDivElement>(chatRef, outsideClickHandler, [
+    ".chat-trigger",
+  ]);
 
   const isOpenNavMenu = useAppSelector(
     (state: RootState) => state.sliceNavMenu.valueNavMenu
