@@ -1,15 +1,15 @@
 import HeaderChat from "./HeaderChat";
 import MenuChat from "./MenuChat";
-import BodyChat from "./BodyChat";
+import BodyChat from "./MessageList";
 import { useRef } from "react";
 import NavHelpMenu from "./NavHelpMenu";
-import ChatInput from "./ChatInput";
-import SmileText from "./SmileText";
+import ChatInput from "./ChatInputFolder/ChatInput";
+import SmileText from "./ChatInputFolder/SmileText";
 import { useAppSelector } from "../../hooksRedux";
 import { RootState } from "../../store";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 import { useAppDispatch } from "../../hooksRedux";
-import { toggleIsChatOpen } from "../../store/Slices";
+import { toggleIsChatOpen } from "../../store/SliceChat";
 
 const Chat = () => {
   const dispatch = useAppDispatch();
@@ -39,6 +39,7 @@ const Chat = () => {
       {isOpenNavMenu && <NavHelpMenu />}
       <BodyChat />
       <ChatInput />
+      {}
       {SmileCollection && <SmileText />}
     </div>
   );

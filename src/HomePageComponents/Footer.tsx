@@ -1,5 +1,5 @@
 import { useAppDispatch } from "../hooksRedux";
-import { toggleIsChatOpen } from "../store/Slices";
+import { toggleIsChatOpen } from "../store/SliceChat";
 
 const Footer = () => {
   const dispatch = useAppDispatch();

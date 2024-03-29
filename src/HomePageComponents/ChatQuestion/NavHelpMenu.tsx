@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
-import { toggleisOpenNavMenu } from "../../store/Slices";
+import { toggleisOpenNavMenu } from "../../store/SliceChat";
 import { useAppDispatch } from "../../hooksRedux";
 
 const NavHelpMenu = () => {

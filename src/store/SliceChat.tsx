@@ -12,7 +12,7 @@ const initialState: isOpen = {
   valueSmile: false,
 };
 
-export const Slices = createSlice({
+export const SliceChat = createSlice({
   name: "slice",
   initialState,
   reducers: {
@@ -30,6 +30,6 @@ export const Slices = createSlice({
 
 // Action creators are generated for each case reducer function
 export const { toggleIsChatOpen, toggleisOpenNavMenu, toggleSmileCollection } =
-  Slices.actions;
+  SliceChat.actions;
 
-export default Slices.reducer;
+export default SliceChat.reducer;

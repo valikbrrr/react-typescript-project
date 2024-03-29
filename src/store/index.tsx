@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import Slices from "./Slices";
+import Slices from "./SliceChat";
 import SliceEntr from "./SliceEntr";
 // import SliceEntrMobOrEmail from "./SliceEntrMobOrEmail";
 

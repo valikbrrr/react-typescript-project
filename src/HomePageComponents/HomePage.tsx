@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import Cards from "./Cards";
 import Footer from "./Footer";
 import Galery from "./Galery";

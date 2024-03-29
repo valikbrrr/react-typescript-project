@@ -3,8 +3,8 @@ import ActionMenuChat from "../../assets/icons/ActionMenuChat.svg";
 import ExternalLinkChat from "../../assets/icons/ExternalLinkChat.svg";
 import CloseChat from "../../assets/icons/CloseChat.svg";
 import { useAppDispatch } from "../../hooksRedux";
-import { toggleIsChatOpen } from "../../store/Slices";
-import { toggleisOpenNavMenu } from "../../store/Slices";
+import { toggleIsChatOpen } from "../../store/SliceChat";
+import { toggleisOpenNavMenu } from "../../store/SliceChat";
 
 const MenuChat = () => {
   const dispatch = useAppDispatch();

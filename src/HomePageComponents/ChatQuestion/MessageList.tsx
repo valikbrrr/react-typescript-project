@@ -1,4 +1,21 @@
-const BodyChat = () => {
+import ListItem from "./ChatInputFolder/ListItem";
+import { useSelector } from "react-redux";
+
+export interface List {
+  id: string;
+  text: string;
+  completed: boolean;
+}
+
+export interface State {
+  listObj: {
+    listArr: List[];
+  };
+}
+
+const MessageList: React.FC = () => {
+  const messages: List[] = useSelector((state: State) => state.listObj.listArr);
+
   return (
     <div className="flex-1 overflow-y-scroll px-2 py-5">
       <div className="flex mb-4">
@@ -17,9 +34,19 @@ const BodyChat = () => {
           сервиса и набор доступных фильмов и сериалов. Не нашли ответа на ваш
           вопрос? Нажмите на кнопку ниже 👇️
         </div>
+        <ul className="grid grid-cols-6">
+          {messages.map(() => (
+            <ListItem />
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
-export default BodyChat;
+export default MessageList;
+
+// map(
+//   arg0: (mes: string) => import("react/jsx-runtime").JSX.Element
+// ): import("react").ReactNode;
+// сделать список сообщений ul

@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { useOnClickOutside } from "../../hooks/useOnClickOutside";
-import { toggleSmileCollection } from "../../store/Slices";
-import { useAppDispatch } from "../../hooksRedux";
+import { useOnClickOutside } from "../../../hooks/useOnClickOutside";
+import { toggleSmileCollection } from "../../../store/SliceChat";
+import { useAppDispatch } from "../../../hooksRedux";
 
 const SmileText = () => {
   const dispatch = useAppDispatch();
